@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .btnPrim {
+    @apply bg-primary1 w-fit px-[40px] py-[18px] text-[16px] text-white capitalize tracking-wider;
+  }
+  .btnSec {
+    @apply bg-primary2 w-fit px-[40px] py-[18px] text-[16px] text-white capitalize tracking-wider;
+  }
+  .btnHover {
+    @apply bg-white w-fit outline-2  outline-primary1 px-[40px] py-[18px] text-[16px] text-primary1 capitalize tracking-wider;
+  }
+  .contactIcon {
+    @apply bg-primary1 w-fit text-lg text-white font-[400] h-fit w-fit py-2 px-3 rounded-full;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,13 +32,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 16px;
 }
 
 @layer utilities {
