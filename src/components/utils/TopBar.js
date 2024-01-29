@@ -6,11 +6,11 @@ import emailIcon from "../../assets/thick@.svg";
 const TopBar = () => {
   return (
     <div className="main bg-primary1 relative z-20">
-      <div className="wrapper text-white flex flex-col items-center container py-6">
-        <p className="text-center mb-4">
+      <div className="wrapper text-white flex flex-col items-center container py-6  lg:flex-row lg:justify-between lg:items-center">
+        <p className="text-center max-md:mb-4 lg:text-left ">
           Welcome to Pharma. We provides medical accessories
         </p>
-        <div className="contactIcons flex flex-col items-center md:flex-row gap-2 ">
+        <div className="contactIcons flex flex-col items-center md:flex-row gap-2 lg:gap-6 ">
           <span className="flex items-center gap-4">
             <span className="p-3 bg-[#095FBA] rounded-full ">
               <Image src={phoneIcon} height={16} alt="phoneIcon" />

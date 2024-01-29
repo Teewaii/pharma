@@ -8,9 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        heroBkg: "url('../../src/assets/herobgk2.png')",
       },
       colors: {
         primary1: "#0152A8",
@@ -19,6 +17,8 @@ module.exports = {
         secondary1: "#DCEDFE",
         secondary2: "#E5F2EF",
         secondary3: "#F1F1F1",
+        HeaderColor: "#1C1C1C",
+        paragraphColor: "#545454",
       },
       container: {
         padding: {
@@ -33,6 +33,13 @@ module.exports = {
       },
       spacing: {
         13: "18.5rem",
+        36: "4.6rem",
+      },
+      letterSpacing: {
+        spread: "0.25rem",
+      },
+      fontSize: {
+        heroHeaderXl: "50px",
       },
     },
   },

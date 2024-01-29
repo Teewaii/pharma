@@ -3,9 +3,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import TopBar from "./utils/TopBar";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import Link from "next/link";
 import HamBuger from "./HamBuger";
+import OverLay from "./OverLay";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(true);
@@ -16,45 +17,67 @@ const NavBar = () => {
 
   const navLinks = {
     Home: "/",
-    About: "/About-us",
+    About: "/about-us",
     Service: "/services",
     "Contact Us": "/contact-us",
   };
 
   return (
-    // SMALL SCREEN NAVIGATION
+    <header>
+      <nav className="main bg-white relaive z-0 ">
+        {/* SMALL SCREEN NAVIGATION */}
+        <div className=" container py-2 h-20 flex items-center justify-between relative sm:py-12 lg:hidden ">
+          <Link href="/">
+            <Image src={logo} height={58} width={140} alt="logo" />
+          </Link>
+          <HamBuger toggle={toggle} Toggle={Toggle} />
+          <div
+            className={
+              toggle
+                ? "flex flex-col gap-y-4  h-fit py-6 absolute left-0 right-0 -bottom-1 container -z-30 transition-all ease-in-out duration-300"
+                : "bg-white flex flex-col gap-y-4 h-fit py-6 absolute left-0 right-0 -bottom-13 container -z-30 transition-all ease-in-out duration-300"
+            }
+          >
+            <ul className="flex flex-col gap-y-4  ">
+              {Object.entries(navLinks).map(([key, value]) => (
+                <li className="text-black" key={key}>
+                  <Link className="text-lg " href={value}>
+                    {key}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-    <nav className="main bg-white relaive z-0 ">
-      <div className=" container py-2 h-20 flex items-center justify-between relative sm:py-12 lg:hidden ">
-        <Image src={logo} height={58} width={175} alt="logo" />
-        <HamBuger toggle={toggle} Toggle={Toggle} />
-        <div
-          className={
-            toggle
-              ? "flex flex-col gap-y-4  h-fit py-6 absolute left-0 right-0 -bottom-1 container -z-30 transition-all ease-in-out duration-300"
-              : "flex flex-col gap-y-4 h-fit py-6 absolute left-0 right-0 shadow-lg -bottom-13 container -z-30 transition-all ease-in-out duration-300"
-          }
-        >
-          <ul className="flex flex-col gap-y-4  ">
+            <Link className=" lg:hidden btnSec relative my-2 " href="/">
+              Appointment
+            </Link>
+          </div>
+        </div>
+
+        {/* LARGE SCREEN NAVIGATION */}
+        <div className="wrapper max-lg:hidden container py-8 flex items-center justify-between relative">
+          <Link href="/">
+            <Image src={logo} height={58} width={190} alt="logo" />
+          </Link>
+          <ul className="flex gap-x-8 ">
             {Object.entries(navLinks).map(([key, value]) => (
-              <li key={key}>
-                <Link className="text-lg " href={value}>
+              <li
+                key={key}
+                className="relative hover:after:absolute after:top-36 after:left-0 after:right-0 after:border-b-4 after:border-primary1"
+              >
+                <Link className="text-lg font-medium" href={value}>
                   {key}
                 </Link>
               </li>
             ))}
           </ul>
-
-          <Link className=" lg:hidden btnSec relative my-2 " href="/">
-            Appointment
-          </Link>
+          <li className="hidden btnSec lg:flex ">
+            <Link href="/">Appointment</Link>
+          </li>
         </div>
-
-        <li className="hidden mt-6 lg:flex btnSec ">
-          <Link href="/">Appointment</Link>
-        </li>
-      </div>
-    </nav>
+      </nav>
+      {/* {!toggle && <OverLay toggle={Toggle} />} */}
+    </header>
   );
 };
 

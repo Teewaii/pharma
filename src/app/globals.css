@@ -4,16 +4,16 @@
 
 @layer utilities {
   .btnPrim {
-    @apply bg-primary1 w-fit px-[40px] py-[18px] text-[16px] text-white capitalize tracking-wider;
+    @apply bg-primary1 w-fit font-medium px-[40px] py-[18px] text-[16px] text-white capitalize tracking-wider hover:bg-primary3 hover:text-white transition-all ease-in-out duration-300;
   }
   .btnSec {
-    @apply bg-primary2 w-fit px-[40px] py-[18px] text-[16px] text-white capitalize tracking-wider;
+    @apply bg-primary2 w-fit font-medium px-[40px] py-[18px] text-[16px] text-black capitalize tracking-wider hover:bg-primary1 hover:text-white transition-all ease-in-out  duration-300;
   }
   .btnHover {
-    @apply bg-white w-fit outline-2  outline-primary1 px-[40px] py-[18px] text-[16px] text-primary1 capitalize tracking-wider;
+    @apply bg-white w-fit font-medium outline-2  outline-primary1 px-[40px] py-[18px] text-[16px] text-primary1 capitalize tracking-wider;
   }
   .contactIcon {
-    @apply bg-primary1 w-fit text-lg text-white font-[400] h-fit w-fit py-2 px-3 rounded-full;
+    @apply bg-primary1 w-fit font-medium text-lg text-white h-fit py-2 px-3 rounded-full;
   }
 }
 
@@ -33,6 +33,8 @@
 
 body {
   font-size: 16px;
+  font-weight: 400;
+  color: #1c1c1c;
 }
 
 @layer utilities {

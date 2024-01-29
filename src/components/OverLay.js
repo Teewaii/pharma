@@ -1,7 +1,7 @@
 import React from "react";
 
-const OverLay = () => {
-  return <div className="absolute inset-0 bg-primary3">555</div>;
+const OverLay = ({ Toggle }) => {
+  return <div onClick={Toggle} className="absolute inset-0 bg-primary3"></div>;
 };
 
 export default OverLay;
