@@ -36,10 +36,11 @@ module.exports = {
         36: "4.6rem",
       },
       letterSpacing: {
-        spread: "0.25rem",
+        spread: "0.28rem",
       },
       fontSize: {
-        heroHeaderXl: "50px",
+        heroHeaderXl: "48px",
+        heroHeader2Xl: "50px",
       },
     },
   },

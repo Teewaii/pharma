@@ -57,7 +57,7 @@ const NavBar = () => {
         {/* LARGE SCREEN NAVIGATION */}
         <div className="wrapper max-lg:hidden container py-8 flex items-center justify-between relative">
           <Link href="/">
-            <Image src={logo} height={58} width={190} alt="logo" />
+            <Image src={logo} width={190} alt="logo" />
           </Link>
           <ul className="flex gap-x-8 ">
             {Object.entries(navLinks).map(([key, value]) => (

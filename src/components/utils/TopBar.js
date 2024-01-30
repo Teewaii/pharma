@@ -20,9 +20,9 @@ const TopBar = () => {
     //       : "main bg-primary1 relative h-fit overflow-hidden z-20"
     //   }
     // >
-    <div className="main bg-primary1 relative  z-20">
-      <div className="wrapper text-white flex flex-col items-center container py-6  lg:flex-row lg:justify-between lg:items-center">
-        <p className="text-center mb-4 lg:text-left ">
+    <div className="main bg-primary1 relative z-20">
+      <div className="wrapper text-white flex flex-col items-center container py-6  lg:flex-row lg:justify-between lg:items-center lg:py-3">
+        <p className="text-center mb-4 lg:text-left lg:mb-0 ">
           Welcome to Pharma. We provides medical accessories
         </p>
         <div className="contactIcons flex flex-col items-center md:flex-row gap-2 lg:gap-6 ">
