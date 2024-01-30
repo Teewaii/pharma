@@ -35,7 +35,7 @@ const NavBar = () => {
             className={
               toggle
                 ? "flex flex-col gap-y-4  h-fit py-6 absolute left-0 right-0 -bottom-1 container -z-30 transition-all ease-in-out duration-300"
-                : "bg-white flex flex-col gap-y-4 h-fit py-6 absolute left-0 right-0 -bottom-13 container -z-30 transition-all ease-in-out duration-300"
+                : "bg-white shadow-lg flex flex-col gap-y-4 h-fit py-6 absolute left-0 right-0 -bottom-13 container -z-30 transition-all ease-in-out duration-300"
             }
           >
             <ul className="flex flex-col gap-y-4  ">

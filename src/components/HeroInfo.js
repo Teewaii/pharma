@@ -7,7 +7,7 @@ const HeroInfo = () => {
       <span className="w-fit text-headerColor font-medium bg-primary2 tracking-wider p-2 xl:tracking-widest">
         MEDICAL PROFESSIONALS
       </span>
-      <h1 className="text-3xl leading-10 text-primary3 font-[700] xl:text-heroHeaderXl lg:leading-12 xl:leading-tight">
+      <h1 className="text-4xl leading-10 text-primary3 font-[700] xl:text-heroHeaderXl lg:leading-12 xl:leading-tight">
         Makes Your Health Better Will Makes Us Better
       </h1>
       <span className="tracking-wide d:max-w-2/6 2xl:max-w-2xl xl:text-lg">
