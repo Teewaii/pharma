@@ -18,7 +18,7 @@ const NavBar = () => {
   const navLinks = {
     Home: "/",
     About: "/about-us",
-    Service: "/services",
+    Service: "/our-services",
     "Contact Us": "/contact-us",
   };
 
@@ -28,7 +28,7 @@ const NavBar = () => {
         {/* SMALL SCREEN NAVIGATION */}
         <div className=" container py-2 h-20 flex items-center justify-between relative sm:py-12 lg:hidden ">
           <Link href="/">
-            <Image src={logo} height={58} width={160} alt="logo" />
+            <Image src={logo} width={160} alt="logo" />
           </Link>
           <HamBuger toggle={toggle} Toggle={Toggle} />
           <div

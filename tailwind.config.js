@@ -42,6 +42,14 @@ module.exports = {
         heroHeaderXl: "48px",
         heroHeader2Xl: "50px",
       },
+      padding: {
+        sectionPsmall: "100px",
+        sectionPlarge: "150px",
+      },
+
+      fontFamily: {
+        sans: ["inter", "Lato"],
+      },
     },
   },
   plugins: [],

@@ -17,7 +17,7 @@
   }
 
   .sectionTitle {
-    @apply w-fit text-HeaderColor uppercase font-medium tracking-wider p-2 xl:tracking-spread;
+    @apply w-fit text-HeaderColor uppercase font-medium tracking-wider py-2 px-4 xl:tracking-spread;
   }
 }
 
