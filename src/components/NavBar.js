@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import TopBar from "./utils/TopBar";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.svg";
 import Link from "next/link";
 import HamBuger from "./HamBuger";
 import OverLay from "./OverLay";
