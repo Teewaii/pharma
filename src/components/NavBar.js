@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className="main bg-white relaive z-0 ">
+      <nav className="main bg-white relaive z-0  ">
         {/* SMALL SCREEN NAVIGATION */}
         <div className=" container py-2 h-20 flex items-center justify-between relative sm:py-12 lg:hidden ">
           <Link href="/">
@@ -35,7 +35,7 @@ const NavBar = () => {
             className={
               toggle
                 ? "flex flex-col gap-y-4  h-fit py-6 absolute left-0 right-0 -bottom-1 container -z-30 transition-all ease-in-out duration-300"
-                : "bg-white shadow-xl flex flex-col gap-y-4 h-fit py-6 absolute left-0 right-0 -bottom-13 container -z-30 transition-all ease-in-out duration-300"
+                : "bg-white shadow-xl flex flex-col gap-y-4 h-fit py-6 absolute left-0 right-0 -bottom-13 container z-30 transition-all ease-in-out duration-300"
             }
           >
             <ul className="flex flex-col gap-y-4 ">
