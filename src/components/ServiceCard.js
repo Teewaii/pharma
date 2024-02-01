@@ -10,29 +10,31 @@ const ServiceCard = () => {
   return (
     <>
       {services.map((service, index) => (
-        <div key={index} className="flex flex-col lg:flex-row">
-          <div className="left bg-secondary3 px-9 py-11 flex flex-col flex-[0.8] gap-y-4">
-            <Image
-              src={service.icon}
-              width="50%"
-              height={48}
-              alt="AngioplastyIcon"
-            />
-            <h1 className="text-xl font-semibold">{service.heading}</h1>
+        <div key={index} className={service.pix ? "md:flex " : " inline"}>
+          <div className="left bg-secondary3 w-[fit] px-8 py-10 flex flex-col flex-[0.85] gap-y-4 lg:w-[285px] ">
+            <sapn className="w-10 h-6">
+              <Image src={service.icon} height="100%" alt="AngioplastyIcon" />
+            </sapn>
+            <Link
+              href="#"
+              className="text-xl font-semibold hover:text-primary1"
+            >
+              {service.heading}
+            </Link>
             <p>{service.body}</p>
             <Link
-              className="font-inter font-semibold flex  items-center gap-1"
+              className="font-inter font-semibold flex items-center gap-1 group"
               href={service.readMore}
             >
               Read More
-              <PlusCircleIcon className="w-5 text-primary2" />
+              <PlusCircleIcon className="w-5 text-primary2 group-hover:text-primary1 transition-all ease-in-out duration-300" />
             </Link>
           </div>
           {service.pix && (
-            <div className="right min-w- flex-[1.2]">
+            <div className="right flex-[1.15]">
               <Image
-                src={dentalPix}
-                alt="DentalPix"
+                src={service.pix}
+                alt={`${service.heading}_Icon`}
                 quality={100}
                 style={{
                   width: "100%",

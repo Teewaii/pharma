@@ -36,7 +36,6 @@ const services = [
     heading: "Eye Care",
     body: "Our team of highly professionals uses the latest health technologies to improve health quickly and easily.",
     readMore: "#",
-
     pix: EyecarePix,
   },
   {

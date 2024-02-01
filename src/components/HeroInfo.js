@@ -12,7 +12,7 @@ const HeroInfo = () => {
         Our team of highly trained professionals uses the latest healing
         technologies to restore you to pain-free health quickly and easily.
       </span>
-      <Link className="btnPrim mt-6 lg:mt-12 " href="#">
+      <Link className="btnPrim mt-6 lg:mt-8 " href="#">
         Get Started
       </Link>
     </div>
