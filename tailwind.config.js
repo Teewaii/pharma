@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         heroBkg: "url('../../src/assets/herobgk2.png')",
+        aboutBkg: "url('../../src/assets/about us.png')",
       },
       colors: {
         primary1: "#0152A8",
