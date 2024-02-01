@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import MultiSpeciality from "../assets/MultiSpeciality.svg";
 import Image from "next/image";
+import MultiSpeciality from "../assets/MultiSpeciality.svg";
+import Hours from "../assets/hours.svg";
 
 const AboutUsSticker = () => {
   return (
-    <div className="  bg-white px-4 py-8 md:px-6 md:py-10 ">
+    <div className="bg-white px-4 py-8 md:px-6 md:py-10 lg:max-w-[450px] xl:max-w-[550px] xl:px-8 xl:py-12  ">
       <div className="">
         <span className="sectionTitle border-2 ">About us</span>
         <h1 className="text-3xl py-6 font-semibold lg:max-w-lg ">
@@ -30,7 +31,7 @@ const AboutUsSticker = () => {
           </div>
           <div className="hours flex items-center gap-3">
             <Image
-              src={MultiSpeciality}
+              src={Hours}
               height="100%"
               width="100%"
               alt="MultiSpecialityIcon"

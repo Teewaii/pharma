@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         heroBkg: "url('../../src/assets/herobgk2.png')",
-        aboutBkg: "url('../../src/assets/about us.png')",
+        aboutBkg: "url('../../src/assets/aboutBkg.png')",
       },
       colors: {
         primary1: "#0152A8",
@@ -45,7 +45,7 @@ module.exports = {
       },
       padding: {
         sectionPsmall: "100px",
-        sectionPlarge: "150px",
+        sectionPlarge: "120px",
       },
 
       fontFamily: {
