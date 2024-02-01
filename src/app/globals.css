@@ -4,13 +4,13 @@
 
 @layer utilities {
   .btnPrim {
-    @apply bg-primary1 w-fit font-medium px-[40px] py-[18px] text-[16px] text-white capitalize tracking-wider hover:bg-primary3 hover:text-white transition-all ease-in-out duration-300;
+    @apply bg-primary1 w-fit font-medium px-[38px] py-[18px] text-[16px] text-white capitalize tracking-wider hover:bg-primary3 hover:text-white transition-all ease-in-out duration-300;
   }
   .btnSec {
-    @apply bg-primary2 w-fit font-medium px-[40px] py-[18px] text-[16px] text-black capitalize tracking-wider hover:bg-primary1 hover:text-white transition-all ease-in-out  duration-300;
+    @apply bg-primary2 w-fit font-medium px-[38px] py-[18px] text-[16px] text-black capitalize tracking-wider hover:bg-primary1 hover:text-white transition-all ease-in-out  duration-300;
   }
   .btnHover {
-    @apply bg-white w-fit font-medium outline-2 outline-primary1 px-[40px] py-[18px] text-[16px] text-primary1 capitalize tracking-wider;
+    @apply bg-white w-fit font-medium outline-2 outline-primary1 px-[38px] py-[18px] text-[16px] text-primary1 capitalize tracking-wider;
   }
   .contactIcon {
     @apply bg-primary1 w-fit font-medium text-lg text-white h-fit py-2 px-3 rounded-full;
