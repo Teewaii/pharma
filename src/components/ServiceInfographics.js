@@ -8,7 +8,7 @@ import medical from "../../src/assets/medical.svg";
 
 const ServiceInfographics = () => {
   return (
-    <section className="w-screen flex flex-col gap-6 py-6 items-center justify-center  md:flex-row md:flex-wrap container lg:justify-between lg:py-12">
+    <section className="w-screen flex flex-col gap-10 py-16 items-center justify-center  md:flex-row md:flex-wrap container lg:justify-between lg:py-12">
       <Image src={spinalCare} width="100%" alt="Icon" />
       <Image src={medic} width="100%" alt="Icon" />
       <Image src={TwoHands} width="100%" alt="Icon" />
