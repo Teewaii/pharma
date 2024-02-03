@@ -16,8 +16,8 @@ const TopBar = () => {
     <div
       className={
         show
-          ? "main bg-primary1 relative h-20 md:h-fit overflow-hidden z-20"
-          : "main bg-primary1 relative h-fit overflow-hidden z-20"
+          ? "main bg-primary1 relative h-20 md:h-fit overflow-hidden z-20  "
+          : "main bg-primary1 relative h-fit overflow-hidden z-20  "
       }
     >
       <div className="wrapper text-white flex flex-col items-center container py-6  lg:flex-row lg:justify-between lg:items-center lg:py-3">
