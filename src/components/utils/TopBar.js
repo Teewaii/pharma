@@ -49,7 +49,7 @@ const TopBar = () => {
       ) : (
         <ChevronUpIcon
           onClick={showAddress}
-          className="w-6 rounded-full bg-primary3 p-1 text-white absolute top-12 right-5 cursor-pointer transition-all ease-in-out duration-300
+          className="w-6 rounded-full bg-primary3 p-1 text-white absolute top-40 right-5 cursor-pointer transition-all ease-in-out duration-300
           md:hidden z-70"
         />
       )}
