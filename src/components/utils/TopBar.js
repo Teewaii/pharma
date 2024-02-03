@@ -13,14 +13,13 @@ const TopBar = () => {
     setShow((prev) => !prev);
   };
   return (
-    // <div
-    //   className={
-    //     show
-    //       ? "main bg-primary1 relative h-20 md:h-fit overflow-hidden z-20"
-    //       : "main bg-primary1 relative h-fit overflow-hidden z-20"
-    //   }
-    // >
-    <div className="main bg-primary1 relative z-20">
+    <div
+      className={
+        show
+          ? "main bg-primary1 relative h-20 md:h-fit overflow-hidden z-20"
+          : "main bg-primary1 relative h-fit overflow-hidden z-20"
+      }
+    >
       <div className="wrapper text-white flex flex-col items-center container py-6  lg:flex-row lg:justify-between lg:items-center lg:py-3">
         <p className="text-center mb-4 lg:text-left lg:mb-0 ">
           Welcome to Pharma. We provides medical accessories
@@ -41,7 +40,7 @@ const TopBar = () => {
           </span>
         </div>
       </div>
-      {/* {show ? (
+      {show ? (
         <ChevronDownIcon
           onClick={showAddress}
           className="w-6 rounded-full bg-primary3 p-1 text-white absolute top-12 right-5 cursor-pointer transition-all ease-in-out duration-300
@@ -53,7 +52,7 @@ const TopBar = () => {
           className="w-6 rounded-full bg-primary3 p-1 text-white absolute top-12 right-5 cursor-pointer transition-all ease-in-out duration-300
           md:hidden z-70"
         />
-      )} */}
+      )}
     </div>
   );
 };
