@@ -1,21 +1,19 @@
-import React from "react";
+import React, { Children } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import schedulePatternLeft from "../../src/assets/schedulePatternLeft.svg";
 import schedulePatternRight from "../../src/assets/schedulePatternRight.svg";
 
-const AppointmentBanner = () => {
+const AppointmentBanner = ({ children, title }) => {
   return (
-    <div className="container relative bg-primary1 h-[fit]">
+    <div className="container relative bg-primary1 h-full">
       <div className="flex flex-col items-center py-32 lg:py-28">
         <div>
-          <h1 className="text-white text-3xl font-semibold text-center leading-14 lg:leading-relaxed lg:max-w-lg">
-            Schedule an imperson or virtual appointment today
+          <h1 className="text-white text-3xl mb-10 font-semibold text-center leading-14 lg:max-w-lg">
+            {title}
           </h1>
         </div>
-        <Link href="#" className="btnSec mt-11">
-          Book an Appointment
-        </Link>
+        <div className="flex items-center gap-10 ">{children}</div>
       </div>
       <div className="absolute left-0 bottom-0 w-32 sm:w-32 lg:w-fit ">
         <Image

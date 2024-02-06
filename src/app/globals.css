@@ -12,10 +12,15 @@
   .btnHover {
     @apply bg-white w-fit font-semibold text-center outline-2 outline-primary1 px-[38px] py-[18px] text-[16px] text-primary1 tracking-wider;
   }
+  .inpuBox {
+    @apply bg-white text-left px-[38px] py-[18px] text-[16px] text-secondary3;
+  }
   .contactIcon {
     @apply bg-primary1 w-fit font-semibold text-lg text-white h-fit py-2 px-3 rounded-full;
   }
-
+  .SubmitPrim {
+    @apply bg-primary1 font-semibold text-center px-[38px] py-[18px] text-[16px] text-white  tracking-wider hover:bg-primary3 hover:text-white cursor-pointer transition-all ease-in-out duration-300;
+  }
   .sectionTitle {
     @apply w-fit text-HeaderColor uppercase text-center font-semibold tracking-wider py-2 px-4 xl:tracking-spread;
   }
