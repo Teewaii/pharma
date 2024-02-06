@@ -31,8 +31,8 @@ const Footer = () => {
   };
 
   return (
-    <section className="relative mx-4 md:mx-8 xl:mx-18 2xl:mx-24 overflow-hidden ">
-      <div className="mainWrapper container bg-secondary2 h-[fit] py-16 ">
+    <section className="relative bg-secondary2 h-[fit] py-16 mx-4 md:mx-8 xl:mx-18 2xl:mx-24 overflow-hidden ">
+      <div className="mainWrapper container relative z-20 ">
         <div className="top ">
           <div className="flex flex-col items-center lg:flex-row lg:justify-between">
             <Link href="/">
@@ -67,7 +67,7 @@ const Footer = () => {
 
         {/* BOTTOM SECTION */}
         <div className="mt-8 flex flex-col gap-6 md:flex md:flex-row md:flex-wrap md:justify-between ">
-          <h1 className="font-semibold md:text-2xl lg:leading-relaxed lg:max-w-xs 2xl:text-3xl">
+          <h1 className="font-semibold md:text-2xl lg:leading-relaxed lg:max-w-sm 2xl:text-3xl 2xl:leading-[45px]">
             “A Simple Story About The Doctorate Medical Center & Health Care
             Foundation”
           </h1>
@@ -97,7 +97,9 @@ const Footer = () => {
             <p className="font-semibold">Book an appointment</p>
 
             <span className="text-center max-w-34 lg:text-left mb-2">
-              It is a long established fact that a reader will be distracted
+              It is a long established fact that a reader{" "}
+              <br className="hidden lg:inline" />
+              will be distracted
             </span>
             <form className="flex flex-col gap-6 md:max-w-[326px] ">
               <input
@@ -116,15 +118,13 @@ const Footer = () => {
         </div>
       </div>
       <Image
-        className="absolute top-0 left-0 "
+        className="absolute top-0 left-0 z-200  "
         src={LeftPattern}
-        height={22}
         alt="leftBkgPatternIcon"
       />
       <Image
         className="absolute bottom-0 right-0 "
         src={RightPattern}
-        height={22}
         alt="rightBkgPatternIcon"
       />
     </section>
