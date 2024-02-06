@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import AboutUs from "@/components/AboutUs";
 import ServiceInfographics from "@/components/ServiceInfographics";
 import BookAppointment from "@/components/BookAppointment";
+import { SpecialCare } from "@/components/SpecialCare";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <AboutUs />
         <ServiceInfographics />
         <BookAppointment />
+        <SpecialCare />
       </div>
     </main>
   );
