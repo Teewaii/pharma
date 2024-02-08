@@ -27,7 +27,7 @@ module.exports = {
           sm: "2rem",
           lg: "3rem",
           xl: "2.5rem",
-          "2xl": "5rem",
+          "2xl": "8rem",
         },
 
         center: true,

@@ -31,7 +31,7 @@ const Footer = () => {
   };
 
   return (
-    <section className="relative py-6 ">
+    <section className="relative pt-6 ">
       <div className="relative bg-secondary2 h-[fit] py-20 mx-4 md:mx-8 xl:mx-18 2xl:mx-24 overflow-hidden ">
         <div className="mainContent container relative z-20 ">
           <div className="top ">
@@ -139,8 +139,8 @@ const Footer = () => {
           alt="rightBkgPatternIcon"
         />
       </div>
-      <div className="container py-4 text-center ">
-        Copyright © Pharma | Designed by VictorFlow Templates{" "}
+      <div className="container py-4 text-center">
+        Copyright © Pharma | Designed by VictorFlow Templates
       </div>
     </section>
   );
