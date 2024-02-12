@@ -140,7 +140,13 @@ const Footer = () => {
         />
       </div>
       <div className="container py-4 text-center">
-        Copyright © Pharma | Designed by VictorFlow Templates
+        Copyright © Pharma | Designed by VictorFlow -
+        <Link
+          className="font-bold text-primary1"
+          href="https://taiyeajimati.vercel.app/"
+        >
+          Developed by Taiye.
+        </Link>
       </div>
     </section>
   );

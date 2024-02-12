@@ -43,19 +43,21 @@ export const SpecialCare = () => {
             Discover Now
           </Link>
         </div>
-        {/* <div className="photo relative flex flex-col items-center gap-5 lg:flex-row ">
-          <Image src={leftImage} height="100%" alt="markPhoto1" />
-          <Image src={rightImage} height="100%" alt="markPhoto2" />
-          <div className="p-4 bg-HeaderColor absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-            <p className="text-white font-bold">Mark Broownn</p>
-            <span className="text-secondary3">Multispecialist</span>
-          </div>
-        </div> */}
 
         <div className="DrMarkPhoto h-100vh flex flex-col items-center relative">
-          <div className="imgWrapper h-full flex flex-col gap-2 items-center md:gap-6 md:flex-row ">
-            <Image src={leftImage} height="100%" alt="markPhoto1" />
-            <Image src={rightImage} height="100%" alt="markPhoto2" />
+          <div className="imgWrapper h-full flex flex-col gap-2 items-center md:gap-4 md:flex-row ">
+            <Image
+              src={leftImage}
+              quality={100}
+              height="100%"
+              alt="markPhoto1"
+            />
+            <Image
+              src={rightImage}
+              quality={100}
+              height="100%"
+              alt="markPhoto2"
+            />
           </div>
           <div
             className="px-6 py-3 min-w-[200px] bg-HeaderColor absolute top-1/2 left-1/2 transform -translate-y-1/2

@@ -7,6 +7,7 @@ import AboutUs from "@/components/AboutUs";
 import ServiceInfographics from "@/components/ServiceInfographics";
 import BookAppointment from "@/components/BookAppointment";
 import { SpecialCare } from "@/components/SpecialCare";
+import FeedBack from "@/components/FeedBack";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <ServiceInfographics />
         <BookAppointment />
         <SpecialCare />
+        <FeedBack />
       </div>
     </main>
   );
