@@ -50,7 +50,7 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ["inter", "Lato"],
+        sans: ["inter"],
       },
     },
   },

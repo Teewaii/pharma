@@ -1,4 +1,6 @@
 import { Montserrat } from "next/font/google";
+import { Lato } from "next/font/google";
+
 import "./globals.css";
 import TopBar from "@/components/utils/TopBar";
 import NavBar from "@/components/NavBar";
@@ -6,6 +8,7 @@ import ToTop from "@/components/utils/ToTop";
 import Footer from "@/components/Footer";
 
 const monst = Montserrat({ subsets: ["latin"] });
+// const lato = Lato({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pharma",

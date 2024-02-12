@@ -8,7 +8,7 @@ export const ReviewCard = () => {
   const starLength = 5;
   const stars = 3;
   return (
-    <div className="bg-secondary3 px-12 py-16 max-w-1/2 space-y-5">
+    <div className="bg-secondary3 px-8 py-10 max-w-1/2 space-y-5 md:px-12 md:py-16 ">
       <div className="header flex justify-between pb-5 border-b-2 ">
         <div className="UserInfo flex flex-col gap-5 md:flex-row md:items-center ">
           <div className="rounded-full h-16 w-16 relative overflow-hidden">
