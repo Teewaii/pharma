@@ -19,6 +19,7 @@ module.exports = {
         secondary2: "#E5F2EF",
         secondary3: "#F1F1F1",
         HeaderColor: "#1C1C1C",
+        deepColor: "#004A99",
         paragraphColor: "#545454",
       },
       container: {

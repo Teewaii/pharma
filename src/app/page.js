@@ -9,6 +9,7 @@ import BookAppointment from "@/components/BookAppointment";
 import { SpecialCare } from "@/components/SpecialCare";
 import FeedBack from "@/components/FeedBack";
 import WhyPharma from "@/components/WhyPharma";
+import TeamContainer from "@/components/TeamContainer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <SpecialCare />
         <FeedBack />
         <WhyPharma />
+        <TeamContainer />
       </div>
     </main>
   );

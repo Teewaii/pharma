@@ -31,7 +31,7 @@ const Footer = () => {
   };
 
   return (
-    <section className="relative ">
+    <section className="relative">
       <div className="relative bg-secondary2 h-[fit] py-20 mx-4 md:mx-8 xl:mx-18 2xl:mx-24 overflow-hidden ">
         <div className="mainContent container relative z-20 ">
           <div className="top ">
