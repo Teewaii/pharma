@@ -10,6 +10,7 @@ import { SpecialCare } from "@/components/SpecialCare";
 import FeedBack from "@/components/FeedBack";
 import WhyPharma from "@/components/WhyPharma";
 import TeamContainer from "@/components/TeamContainer";
+import { News } from "@/components/News";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <FeedBack />
         <WhyPharma />
         <TeamContainer />
+        <News />
       </div>
     </main>
   );
